@@ -16,6 +16,7 @@
             
             
             tt.delegate = self
+            
            
             
          }
@@ -36,14 +37,9 @@
                {
                   text.characters.remove(at:ff.lowerBound)
                 
-                  if let dd = text.range(of: ".")
+                  if string == "."
                   {
-                      text.characters.remove(at:dd.lowerBound)
-                    
-                      if string == "."
-                      {
-                          return false
-                      }
+                     return false
                   }
                 
                }
